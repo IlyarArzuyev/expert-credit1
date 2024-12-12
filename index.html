@@ -19,23 +19,25 @@
             position: fixed;
             left: 10px;
             bottom: 10px;
-            width: 320px;
-            height: 180px;
+            width: 200px;
+            height: 400px;
             z-index: 1000;
             border: 2px solid #000;
             overflow: hidden;
+            border-radius: 30px; /* Обрезанные края */
             transition: width 0.3s, height 0.3s;
         }
 
         .video-container.minimized {
             width: 50px;
-            height: 50px;
+            height: 100px;
         }
 
         /* Стили для видео */
         .video-container video {
             width: 100%;
             height: 100%;
+            object-fit: cover; /* Увеличивает/уменьшает видео для полного заполнения контейнера */
         }
 
         /* Стили для кнопок управления */
@@ -415,7 +417,7 @@
 <!-- Видео-контейнер -->
     <div class="video-container" id="videoContainer">
         <video id="promoVideo" autoplay loop>
-            <source src="your-video.mp4" type="video/mp4">
+            <source src="videoo.mp4" type="video/mp4">
             Ваш браузер не поддерживает видео.
         </video>
         <!-- Кнопки управления -->
